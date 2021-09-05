@@ -1,0 +1,12 @@
+{
+  "main": "index.js",
+
+  "name": "Web Right Click",
+  "description": "Enables right click context menus for Discord web app (normally disabled)",
+
+  "tags": ["backend"],
+
+  "authors": ["506482395269169153"],
+
+  "version": "1.0.0"
+}
