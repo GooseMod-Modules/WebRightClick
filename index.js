@@ -5,11 +5,9 @@ const originalFunc = parentModule.useContextMenuMessage;
 
 class WebRightClick extends Plugin {
   onImport() {
-    console.log(originalFunc);
-    return;
     const v = goosemod.webpackModules.findByProps('hasFlag');
     const S = goosemod.webpackModules.findByProps('MessageFlags');
-    const _ = goosemod.webpackModules.find((x) => x.default?.toString().includes('type!==r.MessageTypes.APPLICATION_COMMAND||null'));
+    const _ = goosemod.webpackModules.find((x) => x.default?.toString().includes('return!r.USER_MESSAGE_TYPES.has(e.type)&&'));
     const y = {
       default: {
         embedded: true
