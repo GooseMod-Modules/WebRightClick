@@ -1,7 +1,7 @@
 import Plugin from '@goosemod/plugin';
 
 const parentModule = goosemod.webpackModules.findByProps('useContextMenuMessage', 'useClickMessage');
-const originalFunc = useContextMenuMessage;
+const originalFunc = parentModule.useContextMenuMessage;
 
 class WebRightClick extends Plugin {
   onImport() {
